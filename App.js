@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 
-export default class FlexDirectionBasics extends Component {
+export default class JustifyContentBasics extends Component {
   render() {
     return (
-      // Try setting `flexDirection` to `column`.
-      <View style={{flex: 1, flexDirection: 'row'}}>
+      // Try setting `justifyContent` to `center`.
+      // Try setting `flexDirection` to `row`.
+      <View style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+      }}>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
@@ -14,4 +19,5 @@ export default class FlexDirectionBasics extends Component {
   }
 };
 
-// Flexdirection basically tells the direction in which you want to have your children. A row or a columns?
+
+// the justifyContent has teh follwing options: space-between, space-around, flex-start, end, center
